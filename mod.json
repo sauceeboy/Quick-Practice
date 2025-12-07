@@ -1,0 +1,40 @@
+{
+	"geode": "4.10.0",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	"id": "konnthedon.quick-practice",
+	"name": "Quick Practice",
+	"version": "v1.0.0",
+	"developer": "konnthedon",
+	"description": "Adds a practice button to the ouside of level",
+	"dependencies": {
+		"geode.node-ids": ">=v1.20.0"
+	},
+	"links": {
+		"source": "https://github.com/sauceeboy/Quick-Practice"
+	},
+	"tags": ["universal", "utility", "enhancement"],
+	"settings": {
+		"title": {
+			"type": "title",
+			"name": "Settings"
+		},
+		"autopractice": {
+			"type": "bool",
+			"default": false,
+			"name": "Auto Practice",
+			"description": "Automaticlly starts the  level in practice mode"
+		},
+		"layout": {
+			"type": "string",
+			"default": "Small Practice",
+			"name": "Layout",
+			"one-of": ["Small Practice", "Same Size"],
+			"description": "Changes the size and position of the buttons"
+		}
+	}
+}
