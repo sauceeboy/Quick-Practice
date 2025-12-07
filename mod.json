@@ -34,10 +34,7 @@
 			"default": "Small Practice",
 			"name": "Layout",
 			"one-of": ["Small Practice", "Same Size"],
-			"description": "Changes the size and position of the buttons",
-			"enable-if": {
-				"autopractice": false
-			}
+			"description": "Changes the size and position of the buttons"
 		}
 	}
 }
