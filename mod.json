@@ -36,7 +36,7 @@
 			"one-of": ["Small Practice", "Same Size"],
 			"description": "Changes the size and position of the buttons",
 			"enable-if": {
-				"autopractice": true
+				"autopractice": false
 			}
 		}
 	}
