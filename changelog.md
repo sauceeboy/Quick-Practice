@@ -3,4 +3,4 @@
 
 # 1.0.1
 - Tweeked the position of the buttons
-- Auto practice now works on main levels
+- Auto practice now works on main leves
