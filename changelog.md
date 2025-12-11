@@ -4,3 +4,6 @@
 
 # 1.0.3
 - Fixed Stuff
+
+# 1.0.4
+- Changed the mods logo
