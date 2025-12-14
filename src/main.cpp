@@ -91,7 +91,7 @@ class $modify(MyPlayLayer, PlayLayer) {
 			this->togglePracticeMode(false);
 		}
 
-		g_forcePractice = false;
+		g_forcePractice = true;
 		return true;
 	}
 };
