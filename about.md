@@ -1,6 +1,6 @@
 # Quick Practice
 
-Customize your Geometry Dash experience by adding a <cg>Practice Mode</c> button directly to the Level Info menu.
+Customize your Geometry Dash experience by adding a <cg>Practice Mode</c> button directly to the Level Info menu and Edit Level Menu.
 
 ## Settings
 
