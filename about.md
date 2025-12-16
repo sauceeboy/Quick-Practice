@@ -1,12 +1,16 @@
 # Quick Practice
 
-A simple mod that adds a <cg>practice mode</c> button to the ouside of levels, there are 2 settings.
+Customize your Geometry Dash experience by adding a <cg>Practice Mode</c> button directly to the Level Info menu.
 
-## <cr>Auto Practice</c>
-- Removes the <cg>practice mode</c> button alltogether and automaticlly puts the player in <cg>practice mode</c> on enter.
+## Settings
 
-## <co>Layout</c>
-- Small Practice: Makes the <cg>practice mode</c> button small and the <cy>play</c> button normal size.
-- Same Size: Makes the <cg>practice mode</c> button and the <cy>play</c> button the same size (in my opinion the other option looks better).
+### <cr>Auto Practice</c>
+Enable this to bypass the menu entirely. When enabled, the button is hidden, and entering a level will **automatically** start you in <cg>Practice Mode</c>.
 
-Thank you for dowloading my mod, updates will be soon to come!
+### <co>Layout</c>
+Customize how the buttons appear in the menu:
+- **Small Practice:** Adds a compact <cg>Practice</c> button while keeping the <cy>Play</c> button at its normal size.
+- **Same Size:** Resizes both the <cy>Play</c> and <cg>Practice</c> buttons to share equal space.
+
+---
+*Thank you for downloading! Updates will be soon to come!*

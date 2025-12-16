@@ -7,3 +7,8 @@
 
 # 1.0.4
 - Changed the mods logo
+
+# 1.1.0
+- Changed the mods logo (again)
+- Added practice button in EditLevelLayer
+- Changed decription
