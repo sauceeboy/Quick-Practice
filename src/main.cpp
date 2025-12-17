@@ -111,6 +111,7 @@ public:
             );
 
             practiceButton->setID("practice-button"_spr);
+            practiceButton->setScale(1.300);
             menu->addChild(practiceButton);
 
         
