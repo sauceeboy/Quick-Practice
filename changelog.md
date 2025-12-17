@@ -12,3 +12,6 @@
 - Changed the mods logo (again)
 - Added practice button in EditLevelLayer
 - Changed decription
+
+# 1.1.1
+- Fix the button postion in EditLevelLayer (oops)

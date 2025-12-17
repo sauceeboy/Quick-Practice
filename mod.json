@@ -8,7 +8,7 @@
 	},
 	"id": "konnthedon.quick-practice",
 	"name": "Quick Practice",
-	"version": "v1.1.0",
+	"version": "v1.1.1",
 	"developer": "konnthedon",
 	"description": "Adds a practice button to the ouside of level",
 	"dependencies": {
