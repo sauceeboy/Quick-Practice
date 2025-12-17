@@ -28,26 +28,25 @@ public:
                 menu_selector(MyLevelInfoLayer::onPracticeButton)
             );
             
-            // Set ID so other mods can find your button
+
             practiceButton->setID("practice-button"_spr);
 
             if (layout == "Small Practice") {
                 practiceButton->setPosition({-55, 51});
                 practiceButton->setScale(0.75f);
-                practiceButton->m_baseScale = 0.75f; // Important for button bounce animation
+                practiceButton->m_baseScale = 0.75f;
                 playButton->setPositionX(12.00f);
             } 
             else if (layout == "Same Size") {
                 practiceButton->setPosition({-40, 51});
-                practiceButton->setScale(1.20f); // Default play button scale is usually around 1.0 or 1.2
+                practiceButton->setScale(1.20f);
                 practiceButton->m_baseScale = 1.20f;
                 playButton->setPositionX(39.00f);
             }
 
             if (autoPrac) {
                 g_forcePractice = true;
-                practiceButton->setVisible(false); // Use setVisible instead of m_bVisible
-                // Disabling isn't strictly necessary if it's invisible, but good practice
+                practiceButton->setVisible(false); 
                 practiceButton->setEnabled(false); 
                 playButton->setPositionX(0.00f);
             } else {
@@ -59,7 +58,7 @@ public:
             menu->addChild(practiceButton);
         }
 
-        // FIX: Return true MUST be outside the if(enabled) block
+    
         return true; 
     }
 
@@ -67,7 +66,7 @@ public:
         g_forcePractice = true;
 
         auto menu = this->getChildByID("play-menu");
-        // FIX: Use getChildByID instead of index to prevent mod conflicts
+
         auto playButton = static_cast<CCMenuItemSpriteExtra*>(menu->getChildByID("play-button"));
 
         if (playButton) {
