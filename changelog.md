@@ -14,4 +14,4 @@
 - Changed decription
 
 # 1.1.1
-- Fix the button postion in EditLevelLayer (oops)
+- Fix the button position in EditLevelLayer (oops)
