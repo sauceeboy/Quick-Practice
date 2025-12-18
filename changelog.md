@@ -15,3 +15,6 @@
 
 # 1.1.1
 - Fix the button position in EditLevelLayer (oops)
+
+# 1.1.2
+- Bug Fixing
