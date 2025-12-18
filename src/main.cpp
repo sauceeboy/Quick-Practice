@@ -66,7 +66,7 @@ public:
             playButton->activate();
         }
     }
-}; // <--- Added missing semicolon here
+};
 
 class $modify(MyLevelSelectLayer, LevelSelectLayer) {
 public:
@@ -100,7 +100,7 @@ public:
         );
 
         practiceButton->setID("practice-button"_spr);
-        practiceButton->setScale(1.300f); // Added 'f' for float correctness
+        practiceButton->setScale(1.300);
         menu->addChild(practiceButton);
 
     
