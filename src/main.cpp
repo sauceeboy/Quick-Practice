@@ -29,10 +29,10 @@ public:
         practiceButton->setID("practice-button"_spr);
 
         if (layout == "Small Practice") {
-            practiceButton->setPosition({-55, 51});
+            practiceButton->setPosition({-45, 51});
             practiceButton->setScale(0.75f);
             practiceButton->m_baseScale = 0.75f;
-            playButton->setPositionX(12.00f);
+            playButton->setPositionX(23.00f);
         } 
         else if (layout == "Same Size") {
             practiceButton->setPosition({-40, 51});
@@ -86,31 +86,43 @@ public:
     bool init(GJGameLevel* level) {
         if (!EditLevelLayer::init(level)) return false;
 
+		bool autoPractice = Mod::get()->getSettingValue<bool>("autopractice");
+		if (autoPractice) {
+			g_forcePractice = true;
+		} else {
+			g_forcePractice = false;
+		}
+
         auto menu = this->getChildByID("level-edit-menu");
     
         auto playButton = menu->getChildByID("play-button");
         auto editButton = menu->getChildByID("edit-button");
         auto shareButton = menu->getChildByID("share-button");
 
-
+		
         auto practiceButton = CCMenuItemSpriteExtra::create(
             CCSprite::createWithSpriteFrameName("GJ_practiceBtn_001.png"),
             this,
             menu_selector(MyEditLevelLayer::onPractice)
         );
 
-        practiceButton->setID("practice-button"_spr);
-        practiceButton->setScale(1.300);
-        menu->addChild(practiceButton);
+        ;
+		if (autoPractice == false) {
+			menu->addChild(practiceButton);
+		}
 
-    
+
         if (editButton) editButton->setZOrder(1);
         practiceButton->setZOrder(2);
         if (playButton) playButton->setZOrder(3);
         if (shareButton) shareButton->setZOrder(4);
 
 
-        menu->updateLayout(); 
+        menu->updateLayout();
+		
+		practiceButton->setID("practice-button"_spr);
+        practiceButton->setScale(1.3f);
+		practiceButton->m_baseScale = 1.3f;
 
         return true;
     }

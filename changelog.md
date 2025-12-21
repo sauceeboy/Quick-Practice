@@ -18,3 +18,7 @@
 
 # 1.1.2
 - Bug Fixing
+
+# 1.1.3
+- Auto Practice in EditLevelLayer
+- Fine tuned the postion of the buttons
