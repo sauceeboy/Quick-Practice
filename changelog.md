@@ -1,24 +1,33 @@
-# 1.0.2
-- Initial Realease.
-- Sorry for 1.0.2 ran into some glitches
+# Quick Practice Changelog
+## Version 1.0.0
+- Initial Release
 
-# 1.0.3
-- Fixed Stuff
+## Version 1.0.3
+- Fixed Things
 
-# 1.0.4
+## Version 1.0.4
 - Changed the mods logo
 
-# 1.1.0
+## Version 1.1.0
 - Changed the mods logo (again)
 - Added practice button in EditLevelLayer
 - Changed decription
 
-# 1.1.1
+## Version 1.1.1
 - Fix the button position in EditLevelLayer (oops)
 
-# 1.1.2
+## Version 1.1.2
 - Bug Fixing
 
-# 1.1.3
+## Version 1.1.3
 - Auto Practice in EditLevelLayer
 - Fine tuned the postion of the buttons
+
+## Version 1.2.0
+- Added soft-toggle
+- Added scale and position offsets
+- Added button to open settings
+- Added another layout
+- Bug Fixing
+- Made changelog look better
+- Changed the description for Release 

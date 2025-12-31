@@ -9,7 +9,8 @@ Enable this to bypass the menu entirely. When enabled, the button is hidden, and
 
 ### <co>Layout</c>
 Customize how the buttons appear in the menu:
-- **Small Practice:** Adds a compact <cg>Practice</c> button while keeping the <cy>Play</c> button at its normal size.
+- **Small Practice Left:** Adds a compact <cg>Practice</c> button on the left, while keeping the <cy>Play</c> button at its normal size.
+- **Small Practice Right** Adds a compact <cg>Practice</c> button on the right, while keeping the <cy>Play</c> button at its normal size.
 - **Same Size:** Resizes both the <cy>Play</c> and <cg>Practice</c> buttons to share equal space.
 
 ---

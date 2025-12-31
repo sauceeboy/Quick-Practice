@@ -8,7 +8,7 @@
 	},
 	"id": "konnthedon.quick-practice",
 	"name": "Quick Practice",
-	"version": "v1.1.3",
+	"version": "v1.2.0",
 	"developer": "konnthedon",
 	"description": "Adds a practice button to the ouside of level",
 	"dependencies": {
@@ -19,22 +19,117 @@
 	},
 	"tags": ["universal", "utility", "enhancement"],
 	"settings": {
-		"title": {
+		"mod-settings": {
 			"type": "title",
-			"name": "Settings"
+			"name": "Mod Settings"
 		},
-		"autopractice": {
+		"enabled": {
+			"type": "bool",
+			"name": "Enabled",
+			"default": true,
+			"description": "Enables or disables the mod"
+		},
+		"basic-settings": {
+			"type": "title",
+			"name": "Basic Settings"
+		},
+		"auto-practice": {
 			"type": "bool",
 			"default": false,
 			"name": "Auto Practice",
-			"description": "Automaticlly starts the  level in practice mode"
+			"description": "Automaticlly starts the  level in practice mode",
+			"enable-if": "enabled"
 		},
 		"layout": {
 			"type": "string",
-			"default": "Small Practice",
+			"default": "Small Practice Left",
 			"name": "Layout",
-			"one-of": ["Small Practice", "Same Size"],
-			"description": "Changes the size and position of the buttons"
+			"one-of": ["Small Practice Left", "Small Practice Right", "Same Size"],
+			"description": "Changes the size and position of the buttons",
+			"enable-if": "enabled"
+		},
+		"offsets": {
+			"type": "title",
+			"name": "Offsets",
+			"description": "Offsets for the buttons (NOTE: Offets only change the buttons in LevelInfoLayer NOT EditLevelLayer)"
+		},
+		"offset-x": {
+			"type": "float",
+			"name": "Practice Button Offset X",
+			"default": 0.0,
+			"description": "Horizontal offset for the practice button",
+			"enable-if": "enabled",
+			"min": -262.0,
+			"max": 262.0,
+			"control": {
+				"slider": true,
+				"slider-step": 0.1
+			}
+		},
+		"offset-y": {
+			"type": "float",
+			"name": "Practice Button Offset Y",
+			"default": 0.0,
+			"description": "Vertical offset for the practice button",
+			"enable-if": "enabled",
+			"min": -262.0,
+			"max": 262.0,
+			"control": {
+				"slider": true,
+				"slider-step": 0.1
+			}
+		},
+		"play-offset-x": {
+			"type": "float",
+			"name": "Play Button Offset X",
+			"default": 0.0,
+			"description": "Horizontal offset for the play button",
+			"enable-if": "enabled",
+			"min": -262.0,
+			"max": 262.0,
+			"control": {
+				"slider": true,
+				"slider-step": 0.1
+			}
+		},
+		"play-offset-y": {
+			"type": "float",
+			"name": "Play Button Offset Y",
+			"default": 0.0,
+			"description": "Vertical offset for the play button",
+			"enable-if": "enabled",
+			"min": -262.0,
+			"max": 262.0,
+			"control": {
+				"slider": true,
+				"slider-step": 0.1
+			}
+		},
+		"scale-offset": {
+			"type": "float",
+			"name": "Practice Button Scale Offset",
+			"default": 0.0,
+			"description": "Scale offset for the practice button",
+			"enable-if": "enabled",
+			"min": -0.75,
+			"max": 3.0,
+			"control": {
+				"slider": true,
+				"slider-step": 0.1
+			}
+		},
+		"play-scale-offset": {
+			"type": "float",
+			"name": "Play Button Scale Offset",
+			"default": 0.0,
+			"description": "Scale offset for the play button",
+			"enable-if": "enabled",
+			"min": -0.75,
+			"max": 3.0,
+			"control": {
+				"slider": true,
+				"slider-step": 0.1
+			}
 		}
 	}
 }
