@@ -31,3 +31,7 @@
 - Bug Fixing
 - Made changelog look better
 - Changed the description for Release 
+
+## Version 1.2.1
+- Fixed sprite scaling in EditLevelLayer
+- Revised README

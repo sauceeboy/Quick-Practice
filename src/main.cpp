@@ -142,14 +142,16 @@ public:
         auto menu = this->getChildByID("level-edit-menu");
         if (!menu) return true;
 
+
+        auto practiceSprite = CCSprite::createWithSpriteFrameName("GJ_practiceBtn_001.png");
+        practiceSprite->setScale(1.3f);
+        
         auto practiceButton = CCMenuItemSpriteExtra::create(
-            CCSprite::createWithSpriteFrameName("GJ_practiceBtn_001.png"),
+            practiceSprite,
             this,
             menu_selector(MyEditLevelLayer::onPractice)
         );
         practiceButton->setID("practice-button"_spr);
-        practiceButton->setScale(1.3f);
-        practiceButton->m_baseScale = 1.3f; 
 
         if (!autoPractice) {
             menu->addChild(practiceButton);
