@@ -15,7 +15,8 @@
 		"geode.node-ids": ">=v1.20.0"
 	},
 	"links": {
-		"source": "https://github.com/sauceeboy/Quick-Practice"
+		"source": "https://github.com/sauceeboy/Quick-Practice",
+		"community": "https://discord.gg/vfXcwNZbU7"
 	},
 	"tags": ["universal", "utility", "enhancement"],
 	"settings": {

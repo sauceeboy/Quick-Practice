@@ -35,3 +35,6 @@
 ## Version 1.2.1
 - Fixed sprite scaling in EditLevelLayer
 - Revised README
+
+## Version 1.2.2
+- Added Discord Server
