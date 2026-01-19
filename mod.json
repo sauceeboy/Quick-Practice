@@ -1,14 +1,14 @@
 {
 	"geode": "4.10.0",
 	"gd": {
-		"win": "2.2074",
+		"win": "2.208",
 		"android": "2.2074",
-		"mac": "2.2074",
+		"mac": "2.208",
 		"ios": "2.2074"
 	},
 	"id": "konnthedon.quick-practice",
 	"name": "Quick Practice",
-	"version": "v1.2.3",
+	"version": "v1.2.4",
 	"developer": "konnthedon",
 	"description": "Adds a practice button to the ouside of level",
 	"dependencies": {

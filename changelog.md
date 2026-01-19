@@ -44,3 +44,6 @@
 - Changed README
 - Added More Auto Practice options
 - Rmoved MacOs and Ios support 
+
+## Version 1.2.4
+- Updated GD Version
