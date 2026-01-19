@@ -43,3 +43,4 @@
 - Organized Scripts
 - Changed README
 - Added More Auto Practice options
+- Rmoved MacOs and Ios support 
