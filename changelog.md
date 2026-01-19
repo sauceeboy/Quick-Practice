@@ -38,3 +38,8 @@
 
 ## Version 1.2.2
 - Added Discord Server
+
+## Version 1.2.3
+- Organized Scripts
+- Changed README
+- Added More Auto Practice options

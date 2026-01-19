@@ -8,7 +8,7 @@
 	},
 	"id": "konnthedon.quick-practice",
 	"name": "Quick Practice",
-	"version": "v1.2.2",
+	"version": "v1.2.3",
 	"developer": "konnthedon",
 	"description": "Adds a practice button to the ouside of level",
 	"dependencies": {
@@ -18,7 +18,12 @@
 		"source": "https://github.com/sauceeboy/Quick-Practice",
 		"community": "https://discord.gg/vfXcwNZbU7"
 	},
-	"tags": ["universal", "utility", "enhancement"],
+	"tags": ["universal", "utility", "interface", "customization"],
+	"resources": {
+		"sprites": [
+			"resources/screenshots/*.png"
+		]
+	},
 	"settings": {
 		"mod-settings": {
 			"type": "title",
@@ -38,8 +43,22 @@
 			"type": "bool",
 			"default": false,
 			"name": "Auto Practice",
-			"description": "Automaticlly starts the  level in practice mode",
-			"enable-if": "enabled"
+			"description": "Automaticlly starts the level in practice mode for normal levels",
+			"enable-if": "enabled && !auto-practice-daily && !auto-practice-weekly"
+		},
+		"auto-practice-daily": {
+			"type": "bool",
+			"default": false,
+			"name": "Auto Practice Daily",
+			"description": "Automaticlly starts the level in practice mode for daily levels",
+			"enable-if": "enabled && !auto-practice && !auto-practice-weekly"
+		},
+		"auto-practice-weekly": {
+			"type": "bool",
+			"default": false,
+			"name": "Auto Practice Weekly",
+			"description": "Automaticlly starts the level in practice mode for weekly levels",
+			"enable-if": "enabled && !auto-practice && !auto-practice-daily"
 		},
 		"layout": {
 			"type": "string",
@@ -47,7 +66,7 @@
 			"name": "Layout",
 			"one-of": ["Small Practice Left", "Small Practice Right", "Same Size"],
 			"description": "Changes the size and position of the buttons",
-			"enable-if": "enabled"
+			"enable-if": "enabled && !auto-practice"
 		},
 		"offsets": {
 			"type": "title",
@@ -59,7 +78,7 @@
 			"name": "Practice Button Offset X",
 			"default": 0.0,
 			"description": "Horizontal offset for the practice button",
-			"enable-if": "enabled",
+			"enable-if": "enabled && !auto-practice",
 			"min": -262.0,
 			"max": 262.0,
 			"control": {
@@ -72,7 +91,7 @@
 			"name": "Practice Button Offset Y",
 			"default": 0.0,
 			"description": "Vertical offset for the practice button",
-			"enable-if": "enabled",
+			"enable-if": "enabled && !auto-practice",
 			"min": -262.0,
 			"max": 262.0,
 			"control": {
@@ -85,7 +104,7 @@
 			"name": "Play Button Offset X",
 			"default": 0.0,
 			"description": "Horizontal offset for the play button",
-			"enable-if": "enabled",
+			"enable-if": "enabled && !auto-practice",
 			"min": -262.0,
 			"max": 262.0,
 			"control": {
@@ -98,7 +117,7 @@
 			"name": "Play Button Offset Y",
 			"default": 0.0,
 			"description": "Vertical offset for the play button",
-			"enable-if": "enabled",
+			"enable-if": "enabled && !auto-practice",
 			"min": -262.0,
 			"max": 262.0,
 			"control": {
@@ -111,7 +130,7 @@
 			"name": "Practice Button Scale Offset",
 			"default": 0.0,
 			"description": "Scale offset for the practice button",
-			"enable-if": "enabled",
+			"enable-if": "enabled && !auto-practice",
 			"min": -0.75,
 			"max": 3.0,
 			"control": {
@@ -124,7 +143,7 @@
 			"name": "Play Button Scale Offset",
 			"default": 0.0,
 			"description": "Scale offset for the play button",
-			"enable-if": "enabled",
+			"enable-if": "enabled && !auto-practice",
 			"min": -0.75,
 			"max": 3.0,
 			"control": {
