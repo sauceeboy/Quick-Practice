@@ -1,9 +1,9 @@
 {
 	"geode": "4.10.0",
 	"gd": {
-		"win": "2.208",
+		"win": "2.2074",
 		"android": "2.2074",
-		"mac": "2.208",
+		"mac": "2.2074",
 		"ios": "2.2074"
 	},
 	"id": "konnthedon.quick-practice",
@@ -18,7 +18,7 @@
 		"source": "https://github.com/sauceeboy/Quick-Practice",
 		"community": "https://discord.gg/vfXcwNZbU7"
 	},
-	"tags": ["universal", "utility", "interface", "customization"],
+	"tags": ["utility", "interface", "customization"],
 	"resources": {
 		"sprites": [
 			"resources/screenshots/*.png"
