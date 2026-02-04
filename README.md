@@ -8,8 +8,8 @@
 
 ## This is a Mod made by **[Konnthedon]("https://github.com/sauceeboy")** that adds a practice button to the outside of levels
 
-![Mod Example](resources/screenshots/Screenshot%20(4).png)
-![Mod Example 2](resources/screenshots/Screenshot%20(5).png)
+![Mod Example](previews/Screenshot%20(4).png)
+![Mod Example 2](previews/Screenshot%20(5).png)
 
 ## Bugs or Need Help?
 * Visit our **[Discord Server]("https://discord.gg/vfXcwNZbU7")** for help or instructions
