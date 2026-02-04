@@ -1,7 +1,7 @@
 #include <Geode/Geode.hpp>
 #include <Geode/modify/LevelInfoLayer.hpp>
 #include <Geode/ui/GeodeUI.hpp>
-#include "Shared.hpp"
+#include "../vars/Shared.hpp"
 
 using namespace geode::prelude;
 

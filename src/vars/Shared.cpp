@@ -1,3 +1,3 @@
-#include "Shared.hpp"
+#include "../vars/Shared.hpp"
 
 bool g_forcePractice = false;

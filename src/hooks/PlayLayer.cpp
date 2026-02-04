@@ -1,6 +1,6 @@
 #include <Geode/Geode.hpp>
 #include <Geode/modify/PlayLayer.hpp>
-#include "Shared.hpp"
+#include "../vars/Shared.hpp"
 
 using namespace geode::prelude;
 
