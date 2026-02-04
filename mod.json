@@ -25,10 +25,6 @@
 		]
 	},
 	"settings": {
-		"mod-settings": {
-			"type": "title",
-			"name": "Mod Settings"
-		},
 		"enabled": {
 			"type": "bool",
 			"name": "Enabled",
@@ -51,14 +47,14 @@
 			"default": false,
 			"name": "Auto Practice Daily",
 			"description": "Automaticlly starts the level in practice mode for daily levels",
-			"enable-if": "enabled && !auto-practice && !auto-practice-weekly"
+			"enable-if": "enabled && !auto-practice"
 		},
 		"auto-practice-weekly": {
 			"type": "bool",
 			"default": false,
 			"name": "Auto Practice Weekly",
 			"description": "Automaticlly starts the level in practice mode for weekly levels",
-			"enable-if": "enabled && !auto-practice && !auto-practice-daily"
+			"enable-if": "enabled && !auto-practice"
 		},
 		"layout": {
 			"type": "string",

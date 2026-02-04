@@ -17,8 +17,7 @@ public:
 
         auto menu = this->getChildByID("level-edit-menu");
         if (!menu) return true;
-
-
+        
         auto practiceSprite = CCSprite::createWithSpriteFrameName("GJ_practiceBtn_001.png");
         practiceSprite->setScale(1.3f);
         

@@ -19,5 +19,9 @@ Customize how the buttons appear in the menu:
 - **Small Practice Right:** Adds a compact <cg>Practice</c> button on the right, while keeping the <cy>Play</c> button at its normal size.
 - **Same Size:** Resizes both the <cy>Play</c> and <cg>Practice</c> buttons to share equal space.
 
+### <cb>Credits</c>
+- [Konnthedon](user:14839939)
+- [Justin800](user:28040998)
+
 ---
 *Thank you for downloading! Updates will be soon to come!*

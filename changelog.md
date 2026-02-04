@@ -44,5 +44,7 @@
 - Changed README
 - Added More Auto Practice options
 
-## Version 1.2.4
-- Added MacOS Support
+## Version 1.2.4 (2.2074)
+- Added MacOS and iOS Support
+- Added Issue Templates
+- Fixed Settings
