@@ -48,3 +48,6 @@
 - Added MacOS and iOS Support
 - Added Issue Templates
 - Fixed Settings
+
+## Version 1.2.5
+- Port to 2.2081
