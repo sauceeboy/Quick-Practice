@@ -38,20 +38,22 @@ public:
         );
         practiceButton->setID("practice-button"_spr);
 
-        auto leftMenu = this->getChildByID("left-side-menu");
-        auto practiceOptSprite = CCSprite::createWithSpriteFrameName("GJ_practiceBtn_001.png");
-        practiceOptSprite->setScale(0.80f);
+        if (!Mod::get()->getSettingValue<bool>("hide-settings-button")) {
+            auto leftMenu = this->getChildByID("left-side-menu");
+            auto practiceOptSprite = CCSprite::createWithSpriteFrameName("GJ_practiceBtn_001.png");
+            practiceOptSprite->setScale(0.80f);
 
-        auto practiceOptionsButton = CCMenuItemSpriteExtra::create(
-            practiceOptSprite,
-            this,
-            menu_selector(MyLevelInfoLayer::onPracticeOptionsButton)
-        );
-        practiceOptionsButton->setID("practice-options-button"_spr);
+            auto practiceOptionsButton = CCMenuItemSpriteExtra::create(
+                practiceOptSprite,
+                this,
+                menu_selector(MyLevelInfoLayer::onPracticeOptionsButton)
+            );
+            practiceOptionsButton->setID("practice-options-button"_spr);
 
-        if (leftMenu) {
-            leftMenu->addChild(practiceOptionsButton);
-            leftMenu->updateLayout();
+            if (leftMenu) {
+                leftMenu->addChild(practiceOptionsButton);
+                leftMenu->updateLayout();
+            }
         }
 
         if (playButton) {

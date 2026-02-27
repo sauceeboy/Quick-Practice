@@ -35,6 +35,13 @@
 			"type": "title",
 			"name": "Basic Settings"
 		},
+		"hide-settings-button": {
+			"type": "bool",
+			"default": false,
+			"name": "Hide Practice Settings",
+			"description": "Hides the Practice settings button on the left of the level info menu",
+			"enable-if": "enabled"
+		},
 		"auto-practice": {
 			"type": "bool",
 			"default": false,
