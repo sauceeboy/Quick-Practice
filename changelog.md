@@ -51,3 +51,6 @@
 
 ## Version 1.2.5
 - Port to 2.2081
+
+## Version 1.2.6
+- Port to 2.2091 (More updates are in the works)
